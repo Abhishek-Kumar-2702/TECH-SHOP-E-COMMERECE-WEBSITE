@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Premium Gadgets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">TechShop</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#featured-products">Products</a></li>
+                <li><a href="#categories-section">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="user-profile">
+                    <a href="#"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="cart-icon-container">
+                    <i class="fas fa-shopping-cart cart-icon"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="new-tag">✨ New Collection 2025</span>
+            <h1>Premium Tech <br> For Everyone</h1>
+            <p>Discover the latest in technology with our curated collection of premium gadgets, electronics, and accessories. Quality guaranteed, prices unmatched.</p>
+            <div class="hero-buttons">
+                <button class="cta-button" onclick="window.location.href='#featured-products'">Shop Now</button>
+                <div class="watch-video-btn">
+                    <i class="fas fa-play-circle"></i> Watch Video
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>50k+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Products</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99%</h3>
+                    <p>Satisfaction</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/heroimage.jpg" alt="Hero Product">
+            <div class="image-overlay"></div>
+            <span class="discount-tag">50% OFF</span>
+            <div class="rating">
+                <i class="fas fa-star"></i> 4.9 Rating
+            </div>  
+        </div>
+    </section>
+
+    <section class="categories-section" id="categories-section">
+        <div class="section-header">
+            <h2>Shop by Category</h2>
+            <p>Explore our wide range of tech products across different categories</p>
+        </div>
+        <div class="categories-grid" id="category-filters">
+            <div class="category-card" data-category="smartphones">
+                <div class="category-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4>Smartphones</h4>
+                <p id="smartphones-count">150 items</p>
+            </div>
+            <div class="category-card" data-category="laptops">
+                <div class="category-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h4>Laptops</h4>
+                <p id="laptops-count">89 items</p>
+            </div>
+            <div class="category-card" data-category="headphones">
+                <div class="category-icon">
+                    <i class="fas fa-headphones-alt"></i>
+                </div>
+                <h4>Headphones</h4>
+                <p id="headphones-count">245 items</p>
+            </div>
+            <div class="category-card" data-category="smartwatches">
+                <div class="category-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h4>Smart Watches</h4>
+                <p id="smartwatches-count">78 items</p>
+            </div>
+            <div class="category-card" data-category="tablets">
+                <div class="category-icon">
+                    <i class="fas fa-tablet-alt"></i>
+                </div>
+                <h4>Tablets</h4>
+                <p id="tablets-count">56 items</p>
+            </div>
+            <div class="category-card" data-category="accessories">
+                <div class="category-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h4>Accessories</h4>
+                <p id="accessories-count">340 items</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products-section" id="featured-products">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <p>Discover our best-selling and newest tech products</p>
+            <button class="view-all-btn">View All Products</button>
+        </div>
+        <div class="product-grid" id="product-grid">
+            </div>
+    </section>
+    
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Stay Updated with Latest Deals</h2>
+            <p>Subscribe to our newsletter and get exclusive offers, new product alerts, and tech news.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+            <p class="no-spam">No spam, unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section company-info">
+                <h3>TechShop</h3>
+                <p>Your trusted destination for premium tech products and accessories.</p>
+                <div class="company-icons">
+                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-laptop-code"></i>
+                    <i class="fas fa-headphones-alt"></i>
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section customer-service">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 TechShop. All rights reserved. Made with ❤️ in India
+        </div>
+    </footer>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <i class="fas fa-times close-cart"></i>
+        </div>
+        <div id="cart-items" class="cart-items">
+            </div>
+        <div class="cart-summary">
+            <input type="text" id="coupon-code" placeholder="Enter Coupon Code">
+            <button id="apply-coupon-btn">Apply</button>
+            <p id="discount-text"></p>
+            <p>Total: ₹<span id="cart-total">0</span></p>
+            <button id="checkout-btn" class="checkout-btn btn btn-primary">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" id="contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="order-success-modal" class="modal">
+        <div class="modal-content success-content">
+            <span class="close-success-modal">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Thank you for your purchase. We have received your order and will process it shortly.</p>
+            <button class="continue-shopping-btn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
